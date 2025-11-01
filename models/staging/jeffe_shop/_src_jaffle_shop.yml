@@ -10,6 +10,17 @@ sources:
       loaded_at_field: _ETL_LOADED_AT
     tables:
       - name: customers
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+              
         freshness: null
       - name: orders
-        
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+              
